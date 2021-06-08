@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// TODO: Create an array of questions for user input
+//Array of questions for user input
 const questions = [
     { 
         //project information
@@ -81,13 +81,39 @@ const questions = [
 // init();
 
 const readmeDataArgs = process.argv.slice(2, process.argv.length);
-const [title, github] = readmeDataArgs;
+const [projTitle, githubName] = readmeDataArgs;
 
 const generatePage = (projTitle, githubName) => {
     return `
-    Title: ${projTitle}
-    GitHub: ${githubName}
+    # ${title}
+    ## Table of Contents
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributing](#contribution)
+    * [Tests](#test)
+    * [License](#license)
+    * [Contact](#contact)
+
+    ## Description
+    ${description}
+    ## Installation
+    ${installation}
+    ## Usage
+    ${usage}
+    ## Contributing
+    ${contribution}
+    ## Tests
+    ${test}
+    ## License
+    ${license}
+
+    ## Contact
+    * GitHub: ${github}
+    * E-mail: ${email}
     `;
 };
-console.log(title, github);
-console.log(generatePage(title, github));
+fs.writeFile('README.md', generatePage(projTitle, githubName), err => {
+    if (err) throw err;
+    console.log('README complete.')
+})
