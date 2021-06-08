@@ -58,7 +58,7 @@ const promptUser = () => {
             type: 'list',
             name: 'license',
             message: 'What licence did you use?',
-            choices: ['MIT License', 'GNU GPL License', 'Apache License 2.0', 'BSD']
+            choices: ['MIT License', 'GNU GPL License', 'Apache License 2.0', 'Mozilla Public License 2.0']
         },
         {
             //user information
