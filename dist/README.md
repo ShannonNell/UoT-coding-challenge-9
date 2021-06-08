@@ -1,35 +1,36 @@
 
-  # a  
+  # Bridge Four  
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 
   ## Description
-  a
+  Running the bridges for Sadaes
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contribution)
-  * [Tests](#test)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
   * [License](#license)
-  * [Contact](#contact)
+  * [Questions](#questions)
 
   ## Installation
-  a
+  Put on lots of armor and hope you don't get shot down by arrows or fall under the weight of your armour.
 
   ## Usage
-  a
+  Run really fast and listen to Kaladin
 
   ## Contributing
-  a
+  Everyone runs. No one falls.
 
   ## Tests
-  a
+  Kaladin up front so he can save us all.
 
   ## License
-  [https://choosealicense.com/licenses/gpl-3.0/](https://choosealicense.com/licenses/gpl-3.0/)
+  [GNU GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
   
 
-  ## Contact
-  * GitHub: a
-  * E-mail: a
+  ## Questions
+  If you have any questions, please feel free to reach out via email or head over to my GitHub account.
+  * GitHub: [ShannonNell](https://github.com/ShannonNell)
+  * E-mail: [kaladin@gmail.com](mailto:kaladin@gmail.com)
   

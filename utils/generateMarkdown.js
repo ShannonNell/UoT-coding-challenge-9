@@ -23,13 +23,13 @@ function renderLicenseLink(license) {
   if (license) {
     switch (license) {
       case (license = 'MIT License'):
-        return `[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/)`;
+        return `[MIT License](https://choosealicense.com/licenses/mit/)`;
       case (license = 'GNU GPL License'):
-        return `[https://choosealicense.com/licenses/gpl-3.0/](https://choosealicense.com/licenses/gpl-3.0/)`;
+        return `[GNU GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)`;
       case (license = 'Apache License 2.0'):
-        return `[https://choosealicense.com/licenses/apache-2.0/](https://choosealicense.com/licenses/apache-2.0/)`;
+        return `[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`;
       case (license = 'Mozilla Public License 2.0'):
-        return `[https://choosealicense.com/licenses/mpl-2.0/](https://choosealicense.com/licenses/mpl-2.0/)`;
+        return `[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)`;
     };
   } else {
     return 'No license provided.';
@@ -80,8 +80,8 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions, please feel free to reach out via email or head over to my GitHub account.
-  * [GitHub: ](${data.github})
-  * [E-mail: ](${data.email})
+  * GitHub: [${data.github}](https://github.com/${data.github})
+  * E-mail: [${data.email}](mailto:${data.email})
   `;
 }
 
