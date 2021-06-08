@@ -3,8 +3,8 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-//Array of questions for user input
-const questions = () => {
+//prompt user for answers to questions
+const promptUser = () => {
     return inquirer.prompt([
         { 
             //project information
@@ -72,10 +72,10 @@ const questions = () => {
             message: 'Enter your email'
         }
     ])
-    .then((readmeData) => {
+    .then(readmeData => {
         return generateMarkdown(readmeData);
     })
-    .then((readmeFile) => {
+    .then(readmeFile => {
         return writeToFile('./dist/README.md', readmeFile);
     })
     .catch(err => {
@@ -101,17 +101,6 @@ function writeToFile(fileName, data) {
     });
 };
 
-
-// fs.writeFile('README.md', generatePage(projTitle, githubName), err => {
-//     if (err) throw err;
-//     console.log('README complete.')
-// })
-
-// // TODO: Create a function to initialize app
-// function init() {}
 //initiallize app
-questions();
+promptUser();
 
-
-// // Function call to initialize app
-// init();
