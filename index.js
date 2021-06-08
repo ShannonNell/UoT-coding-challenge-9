@@ -75,12 +75,31 @@ const questions = () => {
     .then((readmeData) => {
         return generateMarkdown(readmeData);
     })
+    .then((readmeFile) => {
+        return writeToFile('./dist/README.md', readmeFile);
+    })
+    .catch(err => {
+        console.log(err);
+    });
 };
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
-}
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            //if error, reject promise
+            if (err) {
+                reject(err);
+                return;
+            }
+            //if all is well
+            resolve({
+                ok: true, 
+                message: 'File created!'
+            });
+        });
+    });
+};
 
 
 // fs.writeFile('README.md', generatePage(projTitle, githubName), err => {
