@@ -1,5 +1,6 @@
 
-  # a
+  # a  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
   ## Description
   b
@@ -16,18 +17,18 @@
   c
 
   ## Usage
-  d
-
-  ## Contributing
   e
 
-  ## Tests
+  ## Contributing
   f
 
-    ## License
+  ## Tests
+  g
+
+  ## License
   MIT License
 
   ## Contact
-  * GitHub: g
-  * E-mail: h
+  * GitHub: h
+  * E-mail: ij
   
