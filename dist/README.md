@@ -1,9 +1,9 @@
 
   # a  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 
   ## Description
-  b
+  a
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,21 +14,22 @@
   * [Contact](#contact)
 
   ## Installation
-  c
+  a
 
   ## Usage
-  e
+  a
 
   ## Contributing
-  f
+  a
 
   ## Tests
-  g
+  a
 
   ## License
-  MIT License
+  [https://choosealicense.com/licenses/gpl-3.0/](https://choosealicense.com/licenses/gpl-3.0/)
+  
 
   ## Contact
-  * GitHub: h
-  * E-mail: ij
+  * GitHub: a
+  * E-mail: a
   

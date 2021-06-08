@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log(license);
+  // console.log(license);
   if (license) {
     switch (license) {
       case (license = 'MIT License'):
@@ -36,9 +36,14 @@ function renderLicenseLink(license) {
   }
 };
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license) {
+    return `${renderLicenseLink(license)}`
+  }
+  return '';
+}
 
 //generate markdown for README
 function generateMarkdown(data) {
@@ -55,7 +60,7 @@ function generateMarkdown(data) {
   * [Contributing](#contribution)
   * [Tests](#test)
   * [License](#license)
-  * [Contact](#contact)
+  * [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -70,12 +75,13 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## License
-  ${data.license}
+  ${renderLicenseSection(data.license)}
   
 
-  ## Contact
-  * GitHub: ${data.github}
-  * E-mail: ${data.email}
+  ## Questions
+  If you have any questions, please feel free to reach out via email or head over to my GitHub account.
+  * [GitHub: ](${data.github})
+  * [E-mail: ](${data.email})
   `;
 }
 
