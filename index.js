@@ -3,7 +3,8 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 //Array of questions for user input
-const questions = [
+const questions = () => {
+    inquirer.prompt([
     { 
         //project information
         type: 'input', 
@@ -69,8 +70,11 @@ const questions = [
         name: 'email',
         message: 'Enter your email'
     }
-];
+])
+.then(answers => console.log(answers));
+};
 
+questions();
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
@@ -83,37 +87,38 @@ const questions = [
 const readmeDataArgs = process.argv.slice(2, process.argv.length);
 const [projTitle, githubName] = readmeDataArgs;
 
-const generatePage = (projTitle, githubName) => {
-    return `
-    # ${title}
-    ## Table of Contents
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contribution)
-    * [Tests](#test)
-    * [License](#license)
-    * [Contact](#contact)
+// const generatePage = (projTitle, githubName) => {
+//     return `
+//     # ${title}
+//     ## Table of Contents
+//     * [Description](#description)
+//     * [Installation](#installation)
+//     * [Usage](#usage)
+//     * [Contributing](#contribution)
+//     * [Tests](#test)
+//     * [License](#license)
+//     * [Contact](#contact)
 
-    ## Description
-    ${description}
-    ## Installation
-    ${installation}
-    ## Usage
-    ${usage}
-    ## Contributing
-    ${contribution}
-    ## Tests
-    ${test}
-    ## License
-    ${license}
+//     ## Description
+//     ${description}
+//     ## Installation
+//     ${installation}
+//     ## Usage
+//     ${usage}
+//     ## Contributing
+//     ${contribution}
+//     ## Tests
+//     ${test}
+//     ## License
+//     ${license}
 
-    ## Contact
-    * GitHub: ${github}
-    * E-mail: ${email}
-    `;
-};
-fs.writeFile('README.md', generatePage(projTitle, githubName), err => {
-    if (err) throw err;
-    console.log('README complete.')
-})
+//     ## Contact
+//     * GitHub: ${github}
+//     * E-mail: ${email}
+//     `;
+// };
+
+// fs.writeFile('README.md', generatePage(projTitle, githubName), err => {
+//     if (err) throw err;
+//     console.log('README complete.')
+// })
