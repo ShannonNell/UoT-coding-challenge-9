@@ -1,0 +1,22 @@
+{
+  "name": "challenge9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShannonNell/UoT-coding-challenge-9.git"
+  },
+  "author": "Shannon Nell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShannonNell/UoT-coding-challenge-9/issues"
+  },
+  "homepage": "https://github.com/ShannonNell/UoT-coding-challenge-9#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0"
+  }
+}
