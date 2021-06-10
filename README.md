@@ -23,7 +23,7 @@ ___
 ## Usage
 With node installed, from your root directory open the CLI and run the command `node index` or `node index.js`. Questions will appear for you to answer. Details are good! Once finished answering the questions, your readme will be generated and ready for you to use in the 'dist' folder. 
 
-![screenshotHere](./assets/images/)
+![screenshotHere](./assets/images/screenshotTest.png)
 ___
 
 ## Links
