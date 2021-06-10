@@ -68,6 +68,7 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+  ![Project Screenshot](./assets/images/${data.screenshot})
 
   ## Contributing
   ${data.contribution}
@@ -76,6 +77,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Credits
+  ${data.credits}
 
   ## License
   ${renderLicenseSection(data.license)}
