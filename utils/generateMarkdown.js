@@ -68,7 +68,7 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
-  ![Project Screenshot](./assets/images/${data.screenshot})
+  ![Project Screenshot](/assets/images/${data.screenshot})
 
   ## Contributing
   ${data.contribution}

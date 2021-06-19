@@ -15,7 +15,7 @@ const promptUser = () => {
                 if(titleInput) {
                     return true;
                 } else {
-                    console.log('Please enter your project title!'); //OR return 'Please enter...'
+                    console.log('Please enter your project title!'); 
                     return false;
                 }
             }
@@ -28,7 +28,7 @@ const promptUser = () => {
                 if(descriptionInput) {
                     return true;
                 } else {
-                    console.log('Please enter a project description!'); //OR return 'Please enter...'
+                    console.log('Please enter a project description!'); 
                     return false;
                 }
             }
@@ -46,7 +46,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'screenshot', 
-            message: 'If you would like to add a screenshot, create an assets/images folder in your repo and upload your screenshot to it. As long as your folders are labelled correctly, all you need to do is enter your filename here and it will be added to your README. Ex. "./assets/images/screenshot.png" where "screenshot.png" is your filename.' 
+            message: 'If you would like to add a screenshot, create an assets/images folder in your repo and upload your screenshot to it. As long as your folders are labelled correctly, all you need to do is enter your FILENAME here and it will be added to your README. Ex. "./assets/images/screenshot.png" where "screenshot.png" is your FILENAME.' 
         },
         {
             type: 'input', 
@@ -62,7 +62,7 @@ const promptUser = () => {
             //Credits information
             type: 'input', 
             name: 'credits',
-            message: 'List your collaborators, if any, with links to their GitHub profiles.'
+            message: 'List your collaborators GitHub usernames.'
         },
         {
             //license information
