@@ -34,6 +34,18 @@ const promptUser = () => {
             }
         },
         {
+            type: 'confirm',
+            name: 'linkConfirm',
+            message: "Would you like to include a link to your deployed project?",
+            default: true,
+        },
+        {
+            type: 'input',
+            name: 'link',
+            message: "Enter your link.",
+            when: ({ linkConfirm }) => linkConfirm
+        },
+        {
             type: 'input',
             name: 'installation',
             message: 'How do users install your app?',
@@ -62,7 +74,7 @@ const promptUser = () => {
             //Credits information
             type: 'input', 
             name: 'credits',
-            message: 'List your collaborators GitHub usernames.'
+            message: 'List your collaborators, if any, with links to their GitHub profiles if you wish.'
         },
         {
             //license information
