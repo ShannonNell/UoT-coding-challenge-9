@@ -23,12 +23,12 @@ ___
 ## Usage
 With node installed, from your root directory open the CLI and run the command `node index` or `node index.js`. Questions will appear for you to answer. Details are good! Once finished answering the questions, your readme will be generated and ready for you to use in the 'dist' folder. 
 
-![screenshotHere](./assets/images/screenshotTest.png)
+![screenshotHere](/assets/images/ch9_screenshot.png)
 ___
 
 ## Links
 ### Walkthrough of app:
-* [Video Walkthrough]()
+* [Video Walkthrough](https://drive.google.com/file/d/12UUQiW5R8N_M742hD0YfdQfvb3A-T_B7/view)
 ___
 
 ## Tools

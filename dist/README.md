@@ -10,14 +10,14 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contribution)
-  * [Tests](#test)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
   * [Credits](#credits)
   * [License](#license)
   * [Questions](#questions)
 
   ## Installation
-   Ensure you are in the root directory of your repository, then open your CLI (command-line interface) and run the command `npm install inquirer`. If you would like to add screenshots to your readme, make sure you add your own 'assets' folder with a folder named 'images' within it. There you can add your screenshot to be used in your generated file.
+  Ensure you are in the root directory of your repository, then open your CLI (command-line interface) and run the command `npm install inquirer`. If you would like to add screenshots to your readme, make sure you add your own 'assets' folder with a folder named 'images' within it. There you can add your screenshot to be used in your generated file.
 
   ## Usage
   With node installed, from your root directory open the CLI and run the command `node index` or `node index.js`. Questions will appear for you to answer. Details are good! Once finished answering the questions, your readme will be generated and ready for you to use in the 'dist' folder.
